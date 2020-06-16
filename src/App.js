@@ -83,7 +83,7 @@ function App() {
       
       <Router>
       <Link to={'/HomePage/bestMovies'}>
-      <h1>IMDB</h1>
+      <h1>BestMovies</h1>
 
       </Link>
 
