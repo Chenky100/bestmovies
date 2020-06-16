@@ -1,38 +1,134 @@
-.App {
+body {
   text-align: center;
+  /* background-color: #242424; */
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/binding_dark.png");
+  color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  width: 1200px;
+  margin: auto;
+  height: 700px;
+  
+} 
+.bigMovieWin{
+  width: 182px;
+  height: 268px;
+  border: 1px solid white;
+  margin: 50px;
+  margin-left: 140px;
+  float:left;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
+  /* background-clip: va; */
+ 
+  
+
+}
+.bwScore{
+  color: rgb(226, 152, 15);
+  position: relative;
+  bottom: -145px;
+  left: 50px;
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main1{
+  border: 1px solid white;
+  height: 400px;
+}
+.main2{
+  border: 1px solid white;
+  height: 550px;
+}
+.mainrow{
+  /* border: 1px solid white; */
+  height: 550px;
+  width:1200px;
+}
+.col-4{
+}
+.smallwin{
+  border: 1px solid rgb(150, 150, 150);
+  margin-top: 5px;
+  width: 110%;
+  height: 98px;
+  
+}
+.col-2{
+margin-top: 0px;
+padding-top: 0px;
+}
+.row{
+  height: 100px;
+
+}
+.rate{
+  padding-left: 100px;
+  width:  800px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rateButton {
+	box-shadow: 0px 0px 0px 2px #3d4350;
+	background:linear-gradient(to bottom, #253f72 5%, #0d4083 100%);
+	background-color:#252525;
+	border-radius:10px;
+	border:1px solid #313541;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #808183;
+  height: 50px;
+}
+.rateButton:hover {
+	background:linear-gradient(to bottom, #356094 5%, #063ea5 100%);
+  background-color:#4581cc;
+  color: rgb(251, 175, 33);
+
+}
+.rateButton:active {
+	position:relative;
+	top:1px;
+}
+.navButton{
+  height: 100%;
+  width: 100%;
+}
+.rating{
+  font-size: larger;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: rgb(226, 152, 15);
+  font-size: 30px;
+  font-weight: bold;
+
+  
+}
+.para{
+  
+  text-align: left;
+  
+}
+.ratebox{
+  /* background-color: #7892c2; */
+}
+.botBar{
+  border-top: 1px solid rgba(85, 85, 85, 0.486);
+  position: relative;
+  margin-top: 25px;
+  
+  /* bottom: 150px; */
+  padding: 10px;
 }
