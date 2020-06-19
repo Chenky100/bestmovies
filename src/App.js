@@ -2,7 +2,8 @@ import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {HashRouter as Router,Switch,Route , Link} from 'react-router-dom';
-import BestMovies from './Components/BestMovies';
+import TopThree from './Components/TopThree'
+import Movie from './Components/Movie'
 
 let arr = [ {name:"movie 1",description: "just like the Titanic but with a good endings", score: 0, votes: 0,   }, {name:"movie 1",description: "just like the Titanic but with a good endings", score: 0, votes: 0,   }]
 
@@ -18,7 +19,7 @@ function App() {
   );
   const [ranking, setRanking] = useState([0,2,1,3,4]);
   const [currMovieIndx, setCurr] = useState(ranking[0]);
-  const rate = (index, val) =>{
+  const rate1 = (index, val) =>{
     console.log("rateing registered for movie "+movies[index].name+" with the score of " + val +" !");
     
     
@@ -77,24 +78,60 @@ function App() {
     }
     setRanking(arr);    
   }
+  const rate = (val) =>{
+    let tmp = currMovieIndx;
+    rate1(tmp,val)
+    console.log(" curr movie: "+ movies[currMovieIndx].name);
+    
+  }
 
   return (
     <div className="main">
-      
-      <Router>
-      <Link to={'/HomePage/bestMovies'}>
       <h1>BestMovies</h1>
-
-      </Link>
-
-
-        <Switch>
-          <Route exact path='/HomePage/bestMovies' component={()=>{return  <BestMovies movies={movies} rate={rate} ranking={ranking} currMovieIndx={currMovieIndx} navPress={navPress} />}}/>
+        <Router>
           
-        </Switch>
-      </Router>
+          <div className="main1">
+                <TopThree ranking={ranking} navPress={navPress} movies={movies}/>
+          </div>
 
-    <div className="botBar"> © 2020 Chen Kahalany, Inc. </div>
+          <div className="main2" >
+              <div className="row mainrow">
+
+                <div className="col-10">
+                <Switch>
+                    <Route exact path='/HomePage/bestMovies' component={()=>{return  <Movie rate={rate} movie={movies[ranking[0]]}/>}}/>
+                    
+
+                    <Route exact path={'/HomePage/bestMovies/' + movies[0].name} component={()=>{return  <Movie rate={rate} movie={movies[0]}/>}}/>
+                    <Route exact path={'/HomePage/bestMovies/' + movies[1].name} component={()=>{return  <Movie rate={rate} movie={movies[1]}/>}}/>
+                    <Route exact path={'/HomePage/bestMovies/' + movies[2].name} component={()=>{return  <Movie rate={rate} movie={movies[2]}/>}}/>
+                    <Route exact path={'/HomePage/bestMovies/' + movies[3].name} component={()=>{return  <Movie rate={rate} movie={movies[3]}/>}}/>
+                    <Route exact path={'/HomePage/bestMovies/' + movies[4].name} component={()=>{return  <Movie rate={rate} movie={movies[4]}/>}}/>
+                }/>
+
+
+                </Switch>
+        
+                  
+                </div>
+                <div className="col-2">
+                            {movies.map((movie,index)=>{
+     
+                                return (
+                                  <Link to={'/HomePage/bestMovies/' + movies[index].name} > 
+                                    <div className="smallwin"><button className="navButton" onClick={() => { return( navPress(index)  )}}> <h4> { movie.name } </h4> </button> </div></Link>
+                                )
+                            })}
+                </div>
+              </div>
+              
+          </div>
+        </Router>
+          
+        
+      
+
+    <div className="botBar"> © 2020 Chen Kahalany </div>
     </div>
   );
 }
