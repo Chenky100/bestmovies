@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/bestmovies/static/css/main.4220b94a.chunk.css",
-    "main.js": "/bestmovies/static/js/main.f614d29c.chunk.js",
-    "main.js.map": "/bestmovies/static/js/main.f614d29c.chunk.js.map",
+    "main.js": "/bestmovies/static/js/main.a493088b.chunk.js",
+    "main.js.map": "/bestmovies/static/js/main.a493088b.chunk.js.map",
     "runtime-main.js": "/bestmovies/static/js/runtime-main.3c001c2e.js",
     "runtime-main.js.map": "/bestmovies/static/js/runtime-main.3c001c2e.js.map",
-    "static/js/2.57a2160c.chunk.js": "/bestmovies/static/js/2.57a2160c.chunk.js",
-    "static/js/2.57a2160c.chunk.js.map": "/bestmovies/static/js/2.57a2160c.chunk.js.map",
+    "static/js/2.be345b59.chunk.js": "/bestmovies/static/js/2.be345b59.chunk.js",
+    "static/js/2.be345b59.chunk.js.map": "/bestmovies/static/js/2.be345b59.chunk.js.map",
     "index.html": "/bestmovies/index.html",
-    "precache-manifest.1195b43026f813b54021477178aaac44.js": "/bestmovies/precache-manifest.1195b43026f813b54021477178aaac44.js",
+    "precache-manifest.668bde29932fd09714f5b97b265b9c97.js": "/bestmovies/precache-manifest.668bde29932fd09714f5b97b265b9c97.js",
     "service-worker.js": "/bestmovies/service-worker.js",
     "static/css/main.4220b94a.chunk.css.map": "/bestmovies/static/css/main.4220b94a.chunk.css.map",
-    "static/js/2.57a2160c.chunk.js.LICENSE.txt": "/bestmovies/static/js/2.57a2160c.chunk.js.LICENSE.txt",
+    "static/js/2.be345b59.chunk.js.LICENSE.txt": "/bestmovies/static/js/2.be345b59.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/bestmovies/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3c001c2e.js",
-    "static/js/2.57a2160c.chunk.js",
+    "static/js/2.be345b59.chunk.js",
     "static/css/main.4220b94a.chunk.css",
-    "static/js/main.f614d29c.chunk.js"
+    "static/js/main.a493088b.chunk.js"
   ]
 }
